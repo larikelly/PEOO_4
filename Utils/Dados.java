@@ -1,8 +1,6 @@
 package Utils;
 import java.util.Random;
-import Players.Jogador;
-import Players.JogadorSortudo;
-import Players.JogadorAzarado;
+import Players.*;
 
     public class Dados {
 

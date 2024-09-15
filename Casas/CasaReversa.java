@@ -12,7 +12,7 @@ public class CasaReversa extends Casa {
 
     @Override
     public void aplicarRegra(Jogador jogador, Tabuleiro tabuleiro, Scanner input) {
-        Jogador jogadorMaisAtras = tabuleiro.getJogadorMaisAtras();
+        Jogador jogadorMaisAtras = tabuleiro.JogadorMaisAtras();
         if (jogadorMaisAtras != null && jogadorMaisAtras != jogador) {
             System.out.println("CASA REVERSA: Você troca de posição com o jogador mais atrás.");
             int temp = jogador.getPosição();

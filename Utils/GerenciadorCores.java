@@ -5,7 +5,7 @@ public class GerenciadorCores {
     private List<String> coresDisponiveis;
 
     public GerenciadorCores() {
-        this.coresDisponiveis = Arrays.asList("amarelo", "rosa", "vermelho", "preto", "branco", "verde");
+        this.coresDisponiveis = Arrays.asList("amarelo", "rosa", "marrom", "preto", "branco", "verde");
     }
 
     public String escolherCor(Scanner input, List<String> coresDisponiveis, List<String> coresEscolhidas) {

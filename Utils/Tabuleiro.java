@@ -39,24 +39,8 @@ public class Tabuleiro {
 
     private void inicializarCasas() {
         for (int i = 0; i < 40; i++) {
-            if (i == 10 || i == 25 || i == 38) {
-                casas.add(new CasaPrisao(i)); 
-            } else if (i == 13) {
-                casas.add(new CasaSurpresa(i)); 
-            } else if (i == 5 || i == 15 || i == 30) {
-                casas.add(new CasaSorte(i)); 
-            } else if (i == 17 || i == 27) {
-                casas.add(new CasaTroca(i)); 
-            } else if (i == 20 || i == 35) {
-                casas.add(new CasaReversa(i)); 
-            } else if (i == 7 || i == 22 || i == 36) {
-                casas.add(new CasaAzar(i)); 
-            } else if (i == 2 || i == 12 || i == 32) {
-                casas.add(new CasaJogaDeNovo(i)); 
-            } else {         
-                casas.add(new CasaSimples(i)); 
-            }
-        }
+            casas.add(CasaFactory.criarCasa(i)); 
+        }    
     }
 
     public Casa getCasa(int posicao) {
@@ -96,7 +80,7 @@ public class Tabuleiro {
         }
     }
 
-    public Jogador getJogadorMaisAtras() {
+    public Jogador JogadorMaisAtras() {
         if (jogadores.isEmpty()) {
             return null;
         }
