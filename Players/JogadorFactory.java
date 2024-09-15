@@ -1,8 +1,6 @@
-package Utils;
-import Players.*;
+package Players;
 
-    
-    public class JogadorFactory {
+public class JogadorFactory {
     
         public Jogador criarJogador(String tipo, String cor) {
             switch (tipo) {

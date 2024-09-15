@@ -17,7 +17,7 @@ public class Tabuleiro {
         inicializarCasas(); 
     }
 
-    public static synchronized Tabuleiro getInstancia() {
+    public static Tabuleiro getInstancia() {
         if (instanciaUnica == null) {
             instanciaUnica = new Tabuleiro();
         }

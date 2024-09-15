@@ -20,7 +20,7 @@ public abstract class Jogador {
 
     public abstract String getTipoDeJogador();
 
-    public void jogarDados(Jogador jogador) {
+   public void jogarDados(Jogador jogador) {
         int somadosDados = Dados.rolarDoisDados(jogador); 
         if (somaDados(somadosDados)) {
             posição += somadosDados;
@@ -30,7 +30,7 @@ public abstract class Jogador {
         }
         incrementarRodadas();
     }
-
+    
     public void incrementarRodadas() {
         rodadas++;
     }
@@ -84,5 +84,4 @@ public abstract class Jogador {
     public void aplicarEfeitoCasaSimples() {
         adicionarMoedas(1);
     }
-
 }

@@ -28,7 +28,7 @@ import Players.JogadorAzarado;
                 soma = dado1 + dado2;
             }
     
-            System.out.println("Os valores dos dados são: " + dado1 + " e " + dado2 + " (Soma: " + soma + ")");
+            System.out.println("Os valores dos dados são: " + dado1 + " e " + dado2);
             return soma;
         }
     }
