@@ -16,7 +16,7 @@ public class Tabuleiro {
         jogadores = new ArrayList<>();
         inicializarCasas(); 
     }
-
+    /*SINGLETON */
     public static Tabuleiro getInstancia() {
         if (instanciaUnica == null) {
             instanciaUnica = new Tabuleiro();

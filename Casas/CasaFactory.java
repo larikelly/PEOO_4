@@ -1,5 +1,5 @@
 package Casas;
-
+/*FACTORY */
 public class CasaFactory {
 
         public static Casa criarCasa(int index) {

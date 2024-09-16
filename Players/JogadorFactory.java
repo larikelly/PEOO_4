@@ -1,5 +1,5 @@
 package Players;
-
+/*FACTORY */
 public class JogadorFactory {
     
         public Jogador criarJogador(String tipo, String cor) {
